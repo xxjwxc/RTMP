@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{f49bf016-bce6-4504-b934-04bc74ca45f8}</UniqueIdentifier>
+      <Extensions>.c, .cpp</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{000e552d-2b30-4641-9fd5-1fd57ba9f840}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3gp.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_amr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_avc1.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_avcC.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_d263.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_damr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_dref.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_elst.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_enca.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_encv.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_free.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_ftyp.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_gmin.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_hdlr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_hinf.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_hnti.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_href.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mdat.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mdhd.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_meta.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mp4a.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mp4s.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mp4v.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_mvhd.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_ohdr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_root.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_rtp.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_s263.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_sdp.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_smi.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_sound.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_standard.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stbl.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stdp.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stsc.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stsd.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stsz.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_stz2.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_text.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_tfhd.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_tkhd.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_treftype.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_trun.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_udta.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_url.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_urn.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_video.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="atom_vmhd.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="descriptors.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="isma.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4atom.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4container.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4descriptor.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4file.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4file_io.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4info.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4meta.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4property.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4track.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="mp4util.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="need_for_win32.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="ocidescriptors.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="odcommands.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="qosqualifiers.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="rtphint.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual_io.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atoms.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="descriptors.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4array.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4atom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4container.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4descriptor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4file.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4property.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4track.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mp4util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mpeg4ip.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="mpeg4ip_version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ocidescriptors.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="odcommands.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="qosqualifiers.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="rtphint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="virtual_io.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

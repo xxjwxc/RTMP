@@ -1,0 +1,12 @@
+将此(DumpVersion)文件夹放到工程目录下，
+项目设置 属性->后期生成事件->命令行输入
+"$(SolutionDir)\DumpVersion\MakeDumpVersion.exe" "$(TargetPath)" "$(TargetPath)" "$(SolutionDir)\DumpVersion" 
+"$(SolutionDir)\DumpVersion\MakeDumpVersion.exe" "$(TargetPath)" "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)\DumpVersion"
+完成
+
+
+//设置异常处理回调函数
+//SetUnhandledExceptionFilter(MyUnhandledExceptionFilter);
+//如果无效 			
+//调用  在设置自己的异常处理函数后，调用DisableSetUnhandledExceptionFilter 禁止CRT 设置即可。
+

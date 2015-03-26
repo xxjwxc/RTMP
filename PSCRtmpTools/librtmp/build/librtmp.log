@@ -1,0 +1,5 @@
+DEBUG: Parsing...
+DEBUG: Parsed protocol: 0
+DEBUG: Parsed host    : 192.168.1.102
+DEBUG: Parsed app     : live
+DEBUG: RTMP_Connect1, ... connected, handshaking

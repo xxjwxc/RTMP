@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e8faec5a-c490-44b3-bc80-b67ca58849f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools">
+      <UniqueIdentifier>{181847f0-5df8-432f-99c2-fef5861056ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librtmp">
+      <UniqueIdentifier>{ab5c6186-41ed-4ccf-9e15-f99b6929e996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\librtmp\include">
+      <UniqueIdentifier>{772f4b1c-13d7-4cf8-b52e-30207a668cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Encoder">
+      <UniqueIdentifier>{30e3ba8d-190e-4fdd-9d4d-a3f2536fe2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Encoder\base">
+      <UniqueIdentifier>{c4af6c45-a395-4e3a-9372-4219af868d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dshow">
+      <UniqueIdentifier>{b456a672-fa52-482e-8f26-ee84ba5b7ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools\Queue">
+      <UniqueIdentifier>{e2d74e81-db23-4578-997b-d7b68200e023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Asio">
+      <UniqueIdentifier>{30d6779a-565a-4823-ad98-6611059d0510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Data">
+      <UniqueIdentifier>{d6bb95ea-6855-42fd-8e4c-00a69ffee883}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PSCRtmpTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PSCRtmpToolsDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LogDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\MyIni.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\MyTools.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\amf.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\bytes.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\dh.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\dhgroups.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\handshake.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\http.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\log.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\rtmp.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\include\rtmp_sys.h">
+      <Filter>src\librtmp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\AmfByteStream.h">
+      <Filter>src\librtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\LibRtmp.h">
+      <Filter>src\librtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\RtmpLiveEncoder.h">
+      <Filter>src\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\base\DataBuffer.h">
+      <Filter>src\Encoder\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\librtmp\BitWritter.h">
+      <Filter>src\librtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\AudioEncoder.h">
+      <Filter>src\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\FAACEncoder.h">
+      <Filter>src\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\VideoEncoder.h">
+      <Filter>src\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\X264Encoder.h">
+      <Filter>src\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\MyMainEcoder.h">
+      <Filter>src\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encoder\RtmpLiveQue.h">
+      <Filter>src\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\Queue\MyQueue.h">
+      <Filter>src\tools\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\MySingleton.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tools\MyDump.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Asio\MyClient.h">
+      <Filter>src\Asio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Data\GameBase.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PSCRtmpTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PSCRtmpToolsDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LogDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\MyIni.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tools\MyTools.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\librtmp\LibRtmp.cpp">
+      <Filter>src\librtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encoder\RtmpLiveEncoder.cpp">
+      <Filter>src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encoder\AudioEncoder.cpp">
+      <Filter>src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encoder\FAACEncoder.cpp">
+      <Filter>src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encoder\VideoEncoder.cpp">
+      <Filter>src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encoder\X264Encoder.cpp">
+      <Filter>src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encoder\MyMainEcoder.cpp">
+      <Filter>src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encoder\RtmpLiveQue.cpp">
+      <Filter>src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Asio\MyClient.cpp">
+      <Filter>src\Asio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Data\GameBase.cpp">
+      <Filter>src\Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PSCRtmpTools.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PSCRtmpTools.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PSCRtmpTools.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

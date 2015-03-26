@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libx264", "libx264.vcproj", "{A8D6E4CD-1885-4B03-8E41-5F3DB825BAA6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "x264", "x264.vcproj", "{22E1814D-7955-4456-AEA5-0C9BA7500792}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8D6E4CD-1885-4B03-8E41-5F3DB825BAA6} = {A8D6E4CD-1885-4B03-8E41-5F3DB825BAA6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8D6E4CD-1885-4B03-8E41-5F3DB825BAA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A8D6E4CD-1885-4B03-8E41-5F3DB825BAA6}.Debug|Win32.Build.0 = Debug|Win32
+		{A8D6E4CD-1885-4B03-8E41-5F3DB825BAA6}.Release|Win32.ActiveCfg = Release|Win32
+		{A8D6E4CD-1885-4B03-8E41-5F3DB825BAA6}.Release|Win32.Build.0 = Release|Win32
+		{22E1814D-7955-4456-AEA5-0C9BA7500792}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22E1814D-7955-4456-AEA5-0C9BA7500792}.Debug|Win32.Build.0 = Debug|Win32
+		{22E1814D-7955-4456-AEA5-0C9BA7500792}.Release|Win32.ActiveCfg = Release|Win32
+		{22E1814D-7955-4456-AEA5-0C9BA7500792}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

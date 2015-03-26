@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB09BABE-9EA2-4894-8B1C-A04F5E6923BB}</ProjectGuid>
+    <RootNamespace>PSCRtmpTools</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Program Files\boost\boost_1_55\include\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files\boost\boost_1_55\include\lib\x86;../src/librtmp/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Program Files\boost\boost_1_55\include\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files\boost\boost_1_55\include\lib\x86;../src\librtmp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)\DumpVersion\MakeDumpVersion.exe" "$(TargetPath)" "$(TargetPath)" "$(SolutionDir)\DumpVersion" 
+"$(SolutionDir)\DumpVersion\MakeDumpVersion.exe" "$(TargetPath)" "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)\DumpVersion"
+"$(SolutionDir)\DumpVersion\MakeDumpVersion.exe" "$(TargetPath)" "-Timer" "$(SolutionDir)$(Configuration)"
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Asio\MyClient.h" />
+    <ClInclude Include="..\src\Data\GameBase.h" />
+    <ClInclude Include="..\src\Encoder\AudioEncoder.h" />
+    <ClInclude Include="..\src\Encoder\base\DataBuffer.h" />
+    <ClInclude Include="..\src\Encoder\FAACEncoder.h" />
+    <ClInclude Include="..\src\Encoder\MyMainEcoder.h" />
+    <ClInclude Include="..\src\Encoder\RtmpLiveEncoder.h" />
+    <ClInclude Include="..\src\Encoder\RtmpLiveQue.h" />
+    <ClInclude Include="..\src\Encoder\VideoEncoder.h" />
+    <ClInclude Include="..\src\Encoder\X264Encoder.h" />
+    <ClInclude Include="..\src\librtmp\AmfByteStream.h" />
+    <ClInclude Include="..\src\librtmp\BitWritter.h" />
+    <ClInclude Include="..\src\librtmp\include\amf.h" />
+    <ClInclude Include="..\src\librtmp\include\bytes.h" />
+    <ClInclude Include="..\src\librtmp\include\dh.h" />
+    <ClInclude Include="..\src\librtmp\include\dhgroups.h" />
+    <ClInclude Include="..\src\librtmp\include\handshake.h" />
+    <ClInclude Include="..\src\librtmp\include\http.h" />
+    <ClInclude Include="..\src\librtmp\include\log.h" />
+    <ClInclude Include="..\src\librtmp\include\rtmp.h" />
+    <ClInclude Include="..\src\librtmp\include\rtmp_sys.h" />
+    <ClInclude Include="..\src\librtmp\LibRtmp.h" />
+    <ClInclude Include="..\src\tools\MyDump.h" />
+    <ClInclude Include="..\src\tools\MyIni.h" />
+    <ClInclude Include="..\src\tools\MySingleton.h" />
+    <ClInclude Include="..\src\tools\MyTools.h" />
+    <ClInclude Include="..\src\tools\Queue\MyQueue.h" />
+    <ClInclude Include="LogDlg.h" />
+    <ClInclude Include="PSCRtmpTools.h" />
+    <ClInclude Include="PSCRtmpToolsDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Asio\MyClient.cpp" />
+    <ClCompile Include="..\src\Data\GameBase.cpp" />
+    <ClCompile Include="..\src\Encoder\AudioEncoder.cpp" />
+    <ClCompile Include="..\src\Encoder\FAACEncoder.cpp" />
+    <ClCompile Include="..\src\Encoder\MyMainEcoder.cpp" />
+    <ClCompile Include="..\src\Encoder\RtmpLiveEncoder.cpp" />
+    <ClCompile Include="..\src\Encoder\RtmpLiveQue.cpp" />
+    <ClCompile Include="..\src\Encoder\VideoEncoder.cpp" />
+    <ClCompile Include="..\src\Encoder\X264Encoder.cpp" />
+    <ClCompile Include="..\src\librtmp\LibRtmp.cpp" />
+    <ClCompile Include="..\src\tools\MyIni.cpp" />
+    <ClCompile Include="..\src\tools\MyTools.cpp" />
+    <ClCompile Include="LogDlg.cpp" />
+    <ClCompile Include="PSCRtmpTools.cpp" />
+    <ClCompile Include="PSCRtmpToolsDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PSCRtmpTools.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PSCRtmpTools.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PSCRtmpTools.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="PSCRtmpTools.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
